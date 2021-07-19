@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Assignment2</title>
+        <script defer src="indexJS.js"></script>
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <!--Nav Bar start-->
+        <nav>
+            <button type="button" class="btn btn-info" value="white" onclick="changeCanvasColor(value)">White</button>
+            <button type="button" class="btn btn-info" value="dodgerblue" onclick="changeCanvasColor(value)">Blue</button>
+        </nav><br>
+        <!--Nav Bar end-->
+
+        <div align="center">
+            <div id="textSelectors">
+                <!--Select Options start-->
+                <select class="form-control" id = selectOptions onchange="selectImage(value)">
+                    <option>Choose</option>
+                </select>
+                 &nbsp<input type="text" class="form-control form-control" placeholder="Display Text" id="textField" oninput="displayText(value)">
+                <!--Select Options end-->
+            </div><br>
+
+            <!--Canvas start-->
+            <div id="canvasBackground"> <!--this div is only for the background of the canvas-->
+                <div id="textBox"></div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <!--Canvas ends-->
+
+            <br><div class="loader"></div>
+            <img class="rounded" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH3zw8hRNJvOQ/company-logo_200_200/0/1619959477407?e=2159024400&v=beta&t=Mo1_qOYi6M2jodrRUO7DhC07LFljqqDf5tfp2IJca7E" width="100px" height="70px">
+
+        </div>
+
+        <footer id = "footer">&#169 2021 Copyright<a href="https://github.com/shai147369?tab=repositories"> Shai Nahman</a>
+            <span>
+                <a href="https://www.facebook.com/shai.nahman.7"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/shai-nahman-60312119a/"><i class="fab fa-linkedin"></i></a>
+             </span>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+body{
+    font-family: 'Inter', fantasy;
+    margin:auto;
+    width:100%;
+    text-align: center;
+}
+
+/*Nav start css*/
+nav{
+    text-align: center;
+    height:100%;
+    width:100%;
+    font-size: 50px;
+    font-family: 'Inter', fantasy;
+    background-color: dodgerblue;
+}
+
+#textSelectors{
+    display: flex;
+    width:25%;
+}
+/*Nav end css*/
+
+
+
+/*Canvas start css*/
+canvas{
+    position:relative;
+    z-index: 1;
+    border-radius: 7px;
+    margin:20px;
+    width: 640px;
+    height: 360px;
+}
+
+#canvasBackground{
+    z-index:0;
+    border-radius: 7px;
+    width: 680px;
+}
+
+ #textBox{
+     word-break: break-word;
+     overflow: auto;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     font-family: 'Inter', Cursive;
+     font-size: 50px;
+     margin: 20px;
+     position: absolute;
+     z-index:2;
+     width: 640px;
+     height:360px;
+     color: white;
+}
+/*Canvas end css*/
+
+
+/*Footer start*/
+footer{
+    position:fixed;
+    bottom: 0%;
+}
+/*Footer end*/
+
+
+/*Animation loader start*/
+.loader {
+    border: 9px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 9px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/*Animation loader end*/
